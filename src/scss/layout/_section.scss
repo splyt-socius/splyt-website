@@ -41,12 +41,14 @@ $alpha: .7;
     padding: 6rem 0;
     text-align: center;
     &__grid{
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 1fr 1fr;
       margin: 3rem 0;
       img{
         display: block;
+      }
+      @media(min-width: 720px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
       }
     }
   }
@@ -63,6 +65,8 @@ $alpha: .7;
   }
   &__bar{
     background-image: linear-gradient(rgba(#000, .7), rgba(var(--color-brand-4), .2)), url(/dist/img/bar.webp);
+    background-size: cover;
+    background-position: center;
     .no-webp &{
       background-image: linear-gradient(rgba(#000, .7), rgba(var(--color-brand-4), .2)), url(/dist/img/bar.jpg);
     }
