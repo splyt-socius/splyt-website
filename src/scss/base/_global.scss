@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  --color-brand-1: 238, 101, 136;
+  --color-brand-2: 246, 149, 96;
+  --color-brand-3: 99, 33, 86;
+  --color-brand-4: 71, 88, 160;
+  --color-brand-5: #ee6588;
+  --site-width: 1200px;
+  --curve-radius: .4rem;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+body{
+  margin: 0;
+  font: 1.6rem/1.5 'Sen';
+}
+.wrap{
+  width: 90%;
+  max-width: var(--site-width);
+  margin: auto;
+}

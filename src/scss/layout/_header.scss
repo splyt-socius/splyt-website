@@ -1,0 +1,14 @@
+.header{
+  padding: 2rem 0;
+  span{
+    color: #777;
+  }
+  .wrap{
+    display: flex;
+    justify-content: space-between;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+}

@@ -1,9 +1,9 @@
-*{
-  box-sizing: border-box;
-}
-html{
-  --color-brand-1: #ffffff;
-}
-body{
-  margin: 0;
-}
+@import './base/vendors';
+@import './base/typography';
+@import './base/global';
+@import './base/icon';
+@import './base/image';
+@import './base/button';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/section';

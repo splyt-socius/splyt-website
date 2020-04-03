@@ -1,0 +1,13 @@
+.footer{
+  padding: 4rem 0;
+  background: #f1f1f1;
+  color: #999;
+  text-align: center;
+  @media (min-width: 720px) {
+    text-align: left;
+    .wrap{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

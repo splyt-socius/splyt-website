@@ -1,0 +1,59 @@
+$alpha: .7;
+.section{
+  h3{
+    color: var(--color-brand-5);
+  }
+  &--hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+    background-image: linear-gradient(rgba(var(--color-brand-3), .6), rgba(var(--color-brand-4), .6)), url(/dist/img/lobby.webp);
+    background-size: cover;
+    .no-webp &{
+      background-image: url(/dist/img/lobby.jpg);
+    }
+    div{
+      width: 80%;
+      max-width: 60rem;
+      padding: 3rem;
+      border-radius: var(--curve-radius);
+      background: linear-gradient(90deg, rgba(var(--color-brand-1), $alpha), rgba(var(--color-brand-2), $alpha));
+      color: #fff;
+      text-align: center;
+    }
+  }
+  &--process{
+    padding: 6rem 0;
+    text-align: center;
+  }
+  &--mission{
+    > *{
+      flex: 1;
+      min-height: 30rem;
+      padding: 4rem;
+    }
+    @media(min-width: 720px) {
+      display: flex;
+    }
+  }
+  &__detail{
+    max-width: 60rem;
+    margin: auto;
+    color: #777;
+  }
+  &__bar{
+    background-image: linear-gradient(rgba(#000, .7), rgba(var(--color-brand-4), .2)), url(/dist/img/bar.webp);
+    background-size: cover;
+    .no-webp &{
+      background-image: linear-gradient(rgba(#000, .7), rgba(var(--color-brand-4), .2)), url(/dist/img/bar.jpg);
+    }
+  }
+  &__statement{
+    background: linear-gradient(90deg, rgba(var(--color-brand-1), 1), rgba(var(--color-brand-2), 1));
+    color: #fff;
+    h3{
+      color: inherit;
+    }
+  }
+}
