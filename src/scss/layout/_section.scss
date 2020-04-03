@@ -37,6 +37,25 @@ $alpha: .7;
       display: flex;
     }
   }
+  &--team{
+    padding: 6rem 0;
+    text-align: center;
+    &__grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 1fr;
+      margin: 3rem 0;
+      img{
+        display: block;
+      }
+    }
+  }
+  &--contact{
+    padding: 4rem 0;
+    background: #444;
+    min-height: 30rem;
+    text-align: center;
+  }
   &__detail{
     max-width: 60rem;
     margin: auto;
@@ -44,7 +63,6 @@ $alpha: .7;
   }
   &__bar{
     background-image: linear-gradient(rgba(#000, .7), rgba(var(--color-brand-4), .2)), url(/dist/img/bar.webp);
-    background-size: cover;
     .no-webp &{
       background-image: linear-gradient(rgba(#000, .7), rgba(var(--color-brand-4), .2)), url(/dist/img/bar.jpg);
     }
