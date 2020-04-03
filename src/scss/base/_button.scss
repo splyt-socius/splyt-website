@@ -1,0 +1,14 @@
+.button{
+  display: block;
+  width: 100%;
+  padding: 2rem;
+  background: linear-gradient(rgba(var(--color-brand-1), 1), rgba(var(--color-brand-2), 1));
+  border: 0;
+  border-radius: var(--curve-radius);
+  cursor: pointer;
+  box-shadow: 0 2px 3px rgba(#000, .2);
+  transition: transform .5s cubic-bezier(0.5, 0, 0.5, 1);
+  &:hover{
+    transform: scale(1.01);
+  }
+}
