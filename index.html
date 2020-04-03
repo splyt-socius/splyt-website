@@ -12,6 +12,8 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f06664">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
   <script>
     /*! modernizr 3.6.0 (Custom Build) | MIT *
     * https://modernizr.com/download/?-webp-setclasses !*/
@@ -56,7 +58,7 @@
             <img src="/dist/img/sam.jpg" alt="Sam"/>
           </picture>
           <figcaption>
-            <h2>Sam <span>Wise</span></h2>
+            <h4>Sam <span>Wise</span></h4>
             <p>Sam oversees overall operations of Splyt</p>
           </figcaption>			
         </figure>
@@ -67,7 +69,7 @@
             <img src="/dist/img/sabrina.jpg" alt="Sabrina"/>
           </picture>
           <figcaption>
-            <h2>Sabrina <span>Stangler</span></h2>
+            <h4>Sabrina <span>Stangler</span></h4>
             <p>Sabrina oversees UX and Product growth</p>
           </figcaption>			
         </figure>
@@ -78,7 +80,7 @@
             <img src="/dist/img/michael.jpg" alt="Michael"/>
           </picture>
           <figcaption>
-            <h2>Michael <span>Kirsanov</span></h2>
+            <h4>Michael <span>Kirsanov</span></h4>
             <p>Ensures business and financial growth</p>
           </figcaption>			
         </figure>
@@ -89,7 +91,7 @@
             <img src="/dist/img/gwynne.jpg" alt="Gwynne"/>
           </picture>
           <figcaption>
-            <h2>Gwynne <span>Name</span></h2>
+            <h4>Gwynne <span>Name</span></h4>
             <p>Keeps us in legal compliance.</p>
           </figcaption>			
         </figure>
@@ -100,7 +102,7 @@
             <img src="/dist/img/joseph.jpg" alt="Joseph"/>
           </picture>
           <figcaption>
-            <h2>Joseph <span>Rex</span></h2>
+            <h4>Joseph <span>Rex</span></h4>
             <p>Handles design and frontend engineering</p>
           </figcaption>			
         </figure>
@@ -111,7 +113,7 @@
             <img src="/dist/img/bob.jpg" alt="Bob"/>
           </picture>
           <figcaption>
-            <h2>Bob <span>Name</span></h2>
+            <h4>Bob <span>Name</span></h4>
             <p>As the lead architect, Bob ensures we have secure systems.</p>
           </figcaption>			
         </figure>
@@ -119,9 +121,19 @@
     </div>
   </section>
   <section class="section section--contact" id="contact">
+    <div id="map"></div>
     <div class="wrap">
       <h3>Contact us</h3>
       <p class="section__detail">We respond promptly to inquiries and offers</p>
+      <form action="" class="form" autocomplete="off">
+        <label for="subject">Name:</label>
+        <input type="text" class="form__input" autocomplete="new">
+        <label for="subject">Email:</label>
+        <input type="text" class="form__input" autocomplete="new">
+        <label for="subject">Message:</label>
+        <textarea class="form__text" autocomplete="new"></textarea>
+        <button class="button">Send Message</button>
+      </form>
     </div>
   </section>
   <footer class="footer">
@@ -130,6 +142,15 @@
       <p>Made with &hearts; by the Splyt team</p>
     </div>
   </footer>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoiam9zZXBocmV4bWUiLCJhIjoiY2syeWE4dHBhMDYwdzNkbnppdzUweTNicSJ9.qpwhpKOOdgBAx5oKFUbmmw';
+    var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/mapbox/dark-v10', //hosted style id
+    center: [-88.09, 43], // starting position
+    zoom: 11 // starting zoom
+    });
+  </script>
   <script src="dist/js/app.min.js"></script>
 </body>
 </html>

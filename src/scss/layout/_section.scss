@@ -90,7 +90,7 @@ $alpha: .7;
         transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
       }
       
-      figure h2, figure p{
+      figure h4, figure p{
         margin: 0;
       }
 
@@ -108,7 +108,7 @@ $alpha: .7;
         letter-spacing: .1rem;
       }
       
-      figure h2 {
+      figure h4 {
         text-align: left;
         font-weight: normal;
         word-spacing: -0.15em;
@@ -133,13 +133,34 @@ $alpha: .7;
     }
   }
   &--contact{
+    position: relative;
     min-height: 30rem;
     padding: 4rem 0;
-    background: linear-gradient(90deg, rgba(var(--color-brand-3), 1), rgba(var(--color-brand-4), 1));
     color: #eee;
     text-align: center;
+    overflow: hidden;
     .section__detail{
       color: inherit;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      background: linear-gradient(90deg, rgba(var(--color-brand-3), .8), rgba(var(--color-brand-4), .8));
+    }
+    #map{
+      position: absolute;
+      top: 0;
+      bottom: -3rem;
+      width: 100%;
+    }
+    .wrap{
+      position: relative;
+      z-index: 100;
     }
   }
   &__detail{

@@ -1,0 +1,35 @@
+.form{
+  width: 80%;
+  max-width: 70rem;
+  margin: 2rem auto;
+  text-align: left;
+  &__input{
+    width: 100%;
+    height: 4rem;
+    margin: 1rem 0;
+    padding: .5rem 1rem;
+    border: solid thin rgba(255,255,255,.2);
+    border-radius: var(--curve-radius);
+    background: transparent;
+    outline: none;
+    transition: .4s ease border-color;
+    &:focus{
+      border-color: rgba(255,255,255,.7);
+    }
+  }
+  &__text{
+    width: 100%;
+    height: 20rem;
+    margin: 1rem 0;
+    padding: .5rem 1rem;
+    resize: none;
+    border: solid thin rgba(255,255,255,.2);
+    border-radius: var(--curve-radius);
+    background: transparent;
+    outline: none;
+    transition: .4s ease border-color;
+    &:focus{
+      border-color: rgba(255,255,255,.7);
+    }
+  }
+}
