@@ -82,5 +82,5 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.images = images;
 exports.serve = serve;
-exports.build = parallel(styles, scripts);
+exports.build = parallel(styles, scripts, images);
 exports.default = parallel(styles, scripts, images, serve);
