@@ -133,10 +133,14 @@ $alpha: .7;
     }
   }
   &--contact{
-    padding: 4rem 0;
-    background: #444;
     min-height: 30rem;
+    padding: 4rem 0;
+    background: linear-gradient(90deg, rgba(var(--color-brand-3), 1), rgba(var(--color-brand-4), 1));
+    color: #eee;
     text-align: center;
+    .section__detail{
+      color: inherit;
+    }
   }
   &__detail{
     max-width: 60rem;
