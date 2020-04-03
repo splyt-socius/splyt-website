@@ -125,14 +125,14 @@
     <div class="wrap">
       <h3>Contact us</h3>
       <p class="section__detail">We respond promptly to inquiries and offers</p>
-      <form action="" class="form" autocomplete="off" netlify>
+      <form name="contact" method="POST" class="form" autocomplete="off" data-netlify="true">
         <label for="name" required>Name:</label>
-        <input type="text" id="name" required class="form__input" autocomplete="new">
+        <input type="text" name="name" id="name" required class="form__input" autocomplete="new">
         <label for="email">Email:</label>
-        <input type="email" id="email" class="form__input" autocomplete="new">
+        <input type="email" name="email" id="email" class="form__input" autocomplete="new">
         <label for="subject">Message:</label>
-        <textarea class="form__text" autocomplete="new" required></textarea>
-        <button class="button">Send Message</button>
+        <textarea class="form__text" autocomplete="new" name="message" required></textarea>
+        <button class="button" type="submit">Send Message</button>
       </form>
     </div>
   </section>
