@@ -41,18 +41,21 @@ $alpha: .7;
     padding: 6rem 0;
     text-align: center;
     &__grid{
+      display: grid;
+      grid-gap: 5rem;
       margin: 3rem 0;
       img{
         display: block;
         width: 100%;
       }
       @media(min-width: 720px) {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr 1fr;
       }
       figure {
         position: relative;
+        width: 100%;
+        margin: 0;
         background: #f06664;
         overflow: hidden;
       }
